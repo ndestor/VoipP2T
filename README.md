@@ -10,4 +10,4 @@ Use the SIPphone eConf (https://fr.wikipedia.org/wiki/EConf) to make phone calls
 - Documentations/VoipTAT - Description Logiciel.pdf: Describe the logical architecture of the software
 - Documentations/VoipTAT - Guide utilisateur.pdf: User-Guide manual
 
-For more informations, read documents present in "Documentations" dir.
+For more information regarding the code, some UML diagrams are presents in the source code.
