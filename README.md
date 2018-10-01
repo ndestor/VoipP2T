@@ -8,6 +8,6 @@ Use the SIPphone eConf (https://fr.wikipedia.org/wiki/EConf) to make phone calls
 
 - Documentation/VoipTAT - Presentation.pdf: Presentation of the software
 - Documentations/VoipTAT - Description Logiciel.pdf: Describe the logical architecture of the software
-- Documentations/VoipTAT - Guide utilisateur.pdf: Users Guide
+- Documentations/VoipTAT - Guide utilisateur.pdf: User-Guide manual
 
 For more informations, read documents present in "Documentations" dir.
