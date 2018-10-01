@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>com.sporadicism.util.Logger</name>
+    </assembly>
+    <members>
+        <member name="T:com.sporadicism.util.Logger.EventLogger">
+            <summary>
+            Logs events to the System Event Log
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.Logger.ILogger">
+            <summary>
+            Summary description for Class1.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.ILogger.debug(System.String)">
+            <summary>
+            Used for debug messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.ILogger.info(System.String)">
+            <summary>
+            Used for information messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.ILogger.warn(System.String)">
+            <summary>
+            Used for warning messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.ILogger.error(System.String)">
+            <summary>
+            Used for error messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.ILogger.LoggerLevel">
+            <summary>
+            Overall logging level.  This is used to determine whether or not to log
+            	certain statements
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.ILogger.Log">
+            <summary>
+            Returns an instance of the logger class
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.#ctor">
+            <summary>
+            Creates an instance of the logger using the Application log category
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of the event logger taking an application
+            	log name.
+            </summary>
+            <param name="log">Name of the application the log is for</param>
+            <param name="machine">Name of the machine to log to</param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Public constructor for Logger.
+            </summary>
+            <param name="log">Log to log event to</param>
+            <param name="machine">The event log exists on</param>
+            <param name="source">The application/ source of the event</param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.createEventLog(System.String,System.String)">
+            <summary>
+            Creates an instance of the event logger.  If the log does not
+            	exist then it is created
+            </summary>
+            <param name="application">Source of the logging event</param>
+            <param name="machine">Machine to log the event to, "." is the local machine</param>
+            <returns></returns>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.createEventSource(System.String,System.String,System.String)">
+            <summary>
+            Creates an event source if it is not already associated with a log
+            </summary>
+            <param name="machine">Machine the event occurred on</param>
+            <param name="source">Source of the event</param>
+            <param name="log">Name of the log to be logged to</param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.debug(System.String)">
+            <summary>
+            Log the given message to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.info(System.String)">
+            <summary>
+            Log information to the event log
+            </summary>
+            <param name="message">Message to Log</param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.warn(System.String)">
+            <summary>
+            Log a warning to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.EventLogger.error(System.String)">
+            <summary>
+            Log an error to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.EventLogger.LoggerLevel">
+            <summary>
+            Sets the logging level of the current logger
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.EventLogger.Log">
+            <summary>
+            Log object
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.Logger.EventLogger.Application">
+            <summary>
+            Constant for the logger application
+            </summary>
+        </member>
+        <member name="F:com.sporadicism.util.Logger.EventLogger.Application.LOGGER">
+            <summary>
+            Default name of the application being logged
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.Logger.EventLogger.Machine">
+            <summary>
+            Local machine logging
+            </summary>
+        </member>
+        <member name="F:com.sporadicism.util.Logger.EventLogger.Machine.LOCAL">
+            <summary>
+            Default location of the machine to log to
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.Logger.LogName">
+            <summary>
+            Class that holds the constant values for typical Windows NT/ 2000 Event Log Names
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.APPLICATION">
+            <summary>
+            Application Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.SYSTEM">
+            <summary>
+            System Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.SECURITY">
+            <summary>
+            Security Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.DIRECTORY_SERVICE">
+            <summary>
+            Directory Service Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.DNS_SERVER">
+            <summary>
+            DNS Server Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.FILE_REPLICATION_SERVICE">
+            <summary>
+            File Replication Service
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.PORTAL_DEV">
+            <summary>
+            Development event log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.Logger.LogName.PORTAL_PROD">
+            <summary>
+            Production event log
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.Logger.LogFactory">
+            <summary>
+            Summary description for LogFactory.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.LogFactory.#ctor">
+            <summary>
+            Public constructor
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.Logger.LogFactory.getEventLogger(System.String,System.String,System.String)">
+            <summary>
+            Returns a new event logger
+            </summary>
+            <param name="machine">Machine that log will go to</param>
+            <param name="log">Name of log</param>
+            <param name="source">Source of the log event</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

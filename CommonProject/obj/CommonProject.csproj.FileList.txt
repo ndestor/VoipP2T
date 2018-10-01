@@ -1,0 +1,10 @@
+bin\Debug\CommonProject.dll
+bin\Debug\CommonProject.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CommonProject.dll
+obj\Debug\CommonProject.pdb
+bin\Release\CommonProject.dll
+bin\Release\CommonProject.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\CommonProject.dll
+obj\Release\CommonProject.pdb

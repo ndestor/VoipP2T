@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Manager.Scenario.Datas.ScenarioDatas" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\Datas\Scenario.cs</FileName>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Manager.Scenario.Datas.Scenario" Collapsed="true">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\Datas\Scenario.cs</FileName>
+      <HashCode>CAAAgIBAAAAAAAAAAABoAAQICAQgAAAAAIABBgDAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonProject.Scenario.Datas.GenericScenario" Collapsed="true">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Manager.Scenario.SolutionDatas" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\ScenarioSolution_Model.cs</FileName>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Manager.Scenario.ScenarioSolution" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\ScenarioSolution_Model.cs</FileName>
+      <HashCode>CCAAiAAAYEAAAIAAgAIAAAQQABABgAAQAIQIAACIIAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Manager.Scenario.Datas.Steps.CallStep" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\Datas\Steps\CallStep.cs</FileName>
+      <HashCode>AIAAAAAAAAIAgAIAAAAAAEBAQAAIAAAAAAAAAhAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Manager.Scenario.Datas.Steps.DTMFStep" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\Datas\Steps\DTMFStep.cs</FileName>
+      <HashCode>AMAAAAAAAAIAgAIAAAAAAEAgAAAAAAQAAAAAAhAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Manager.Scenario.Datas.Steps.HangupStep" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\Datas\Steps\HangupStep.cs</FileName>
+      <HashCode>AIAAAAAAAAAAgAIAAAAAAEAAAAAAAAAAAAAAAhAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Manager.Scenario.Datas.Steps.WaitStep" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\Datas\Steps\WaitStep.cs</FileName>
+      <HashCode>AIAAAAAAAAAAgAIAAAAAAEAAEAAAAAAAAAAAAhAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonProject.Scenario.Datas.GenericStep" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CommonProject.Scenario.Datas.Steps.GenericCallStep" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CommonProject.Scenario.Datas.Steps.GenericDTMFStep" Collapsed="true">
+    <Position X="9.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CommonProject.Scenario.Datas.Steps.GenericHangupStep" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CommonProject.Scenario.Datas.Steps.GenericWaitStep" Collapsed="true">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Enum Name="CommonProject.Scenario.Datas.StepsName" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="DTMFSignalType" Collapsed="true">
+    <Position X="7.25" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="DTMF" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="CommonProject.Scenario.Datas.Steps.CallType" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="CommonProject.Scenario.Datas.Steps.CallProtocol" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="CommonProject.Scenario.Datas.Steps.CallMode" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="CommonProject.Scenario.Datas.Steps.CallerIdentitie" Collapsed="true">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+</ClassDiagram>

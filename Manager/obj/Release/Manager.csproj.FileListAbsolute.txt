@@ -1,0 +1,2 @@
+Z:\PERSO\AutomateTests1\Manager\obj\Release\Manager.exe
+Z:\PERSO\AutomateTests1\Manager\obj\Release\Manager.pdb

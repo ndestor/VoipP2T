@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Fichier de configuration du Manager - Automate de Tests V1.0-->
+<Solution>
+  <Name>Solution1</Name>
+  <FullPath>C:\Documents and Settings\admin\Bureau\Projet TESTMANAGER\AutomateTests1\Manager\bin\Release\</FullPath>
+  <Scenarios>
+    <Scenario>testDTMF</Scenario>
+    <Scenario>Test 18-01-07</Scenario>
+    <Scenario>test OIP-OIR</Scenario>
+    <Scenario>test</Scenario>
+    <Scenario>OIR</Scenario>
+  </Scenarios>
+</Solution>

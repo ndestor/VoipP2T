@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Fichier de configuration du Manager - Automate de Tests V1.0-->
+<Manager>
+  <GeneralParameters>
+    <GeneralParameters Name="Manager" />    
+  </GeneralParameters>
+  <TesterParameters>
+    <Tester Name="Tester1">
+      <NetworkInformations IPAdress="172.20.14.75" Port="10000" SipNumer="0975612330"/>
+    </Tester>
+
+    <Tester Name="Tester2">
+      <NetworkInformations IPAdress="172.20.14.76" Port="10001" SipNumer="0975612430" />
+    </Tester>
+ 
+  </TesterParameters>
+</Manager>

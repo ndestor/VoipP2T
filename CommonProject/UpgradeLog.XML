@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CommonProject">
+</Property><Property Name="Fichier solution" Value="Z:\PERSO\AutomateTests1\CommonProject\CommonProject.sln">
+</Property><Property Name="Date" Value="dimanche 30 septembre 2018">
+</Property><Property Name="Time" Value="16:13:51">
+</Property></Properties><Event ErrorLevel="0" Project="CommonProject" Source="CommonProject.csproj" Description="Projet correctement converti">
+</Event><Event ErrorLevel="3" Project="CommonProject" Source="CommonProject.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CommonProject" Source="CommonProject.csproj" Description="Analyse terminée : la mise à niveau n'est pas requise pour les fichiers projet.">
+</Event></UpgradeLog>

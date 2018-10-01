@@ -1,0 +1,5 @@
+C:\Documents and Settings\admin\Bureau\Projet TESTMANAGER\AutomateTests1\CommonProject\bin\Release\CommonProject.dll
+C:\Documents and Settings\admin\Bureau\Projet TESTMANAGER\AutomateTests1\CommonProject\bin\Release\CommonProject.pdb
+C:\Documents and Settings\admin\Bureau\Projet TESTMANAGER\AutomateTests1\CommonProject\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\admin\Bureau\Projet TESTMANAGER\AutomateTests1\CommonProject\obj\Release\CommonProject.dll
+C:\Documents and Settings\admin\Bureau\Projet TESTMANAGER\AutomateTests1\CommonProject\obj\Release\CommonProject.pdb

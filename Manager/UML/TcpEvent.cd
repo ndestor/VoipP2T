@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Manager.Communication.TcpEvents">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\TcpEvents.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommonProject.Communication.GenericTcpEvents">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Delegate Name="CommonProject.Communication.OrderReceivingHandler" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.MessageReceivingHandler" Collapsed="true">
+    <Position X="6.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.MessageSendindHandler" Collapsed="true">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication._TcpNetworkStatusHandler" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.ScenarioReceiveHandler" Collapsed="true">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.AckReceivingHandler" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.StepResultReceiveHandler" Collapsed="true">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.StatusAskingHandler" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.StartScenarioHandler" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.StopScenarioHandler" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.LoadScenarioHandler" Collapsed="true">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="CommonProject.Communication.PlayStepHandler" Collapsed="true">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+</ClassDiagram>

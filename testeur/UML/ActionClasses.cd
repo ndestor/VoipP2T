@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Tester.Scenario.ActionManager" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\ActionManager.cs</FileName>
+      <HashCode>gAQgABAAACAAAEAAAAACAAAAAAABAACAACAAQAAAEgQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tester.Scenario.CallManager.DoCall" Collapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\CallManager\DoCall.cs</FileName>
+      <HashCode>AAAAAAAgAQAAAEwAAEAAAAAAAAABAAAAAAQAAQAAEAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tester.Scenario.CallManager.ReceiveCall" Collapsed="true">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\CallManager\ReceiveCall.cs</FileName>
+      <HashCode>AAAAAAAgAAAAAAAAAEAkBAAAAAABAAAAAAAAAAAAEAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tester.Scenario.CallManager.CallConverter" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\CallManager\CallDatas.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tester.Scenario.DTMFManager.DoDTMF" Collapsed="true">
+    <Position X="4.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\DTMFManager\DoDTMF.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAAAAAAAECQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tester.Scenario.DTMFManager.DTMFConverter" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\DTMFManager\DTMFConverter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tester.Scenario.DTMFManager.ReceiveDTMF" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\DTMFManager\ReceiveDTMF.cs</FileName>
+      <HashCode>AAAAAIAAAAAAAEAAAAAEAAAAAAABAAAQAAAAAAAAEAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tester.Scenario.HangupManager.DoHangup" Collapsed="true">
+    <Position X="2" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\HangupManager\DoHangup.cs</FileName>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAQAAAAAABAAABAAAAAAAAEAQ=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Tester.Scenario.ActionManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="2.75" />
+        <Point X="4.84" Y="2.75" />
+        <Point X="4.84" Y="3.062" />
+        <Point X="3.5" Y="3.062" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Tester.Scenario.HangupManager.ReceiveHangup" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\HangupManager\ReceiveHangup.cs</FileName>
+      <HashCode>AAAAQAAgAAAAAAAAAAAAAAAAAAABAAABAAAAAAAAEAQ=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Tester.Scenario.ActionManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="2.75" />
+        <Point X="4.84" Y="2.75" />
+        <Point X="4.84" Y="2.312" />
+        <Point X="3.5" Y="2.312" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Tester.Scenario.WaitManager.DoWait" Collapsed="true">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scenario\WaitManager\DoWait.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAQAAAAAAARAAAAAAAAAAAAEAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

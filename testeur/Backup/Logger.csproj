@@ -1,0 +1,230 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.0.9466"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{63FACBA8-3E04-469F-87FA-8B2A6AB04F03}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "csharp-logger"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                RootNamespace = ""
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = "netdoc\Logger.xml"
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "nunit.framework"
+                    AssemblyName = "nunit.framework"
+                    HintPath = "lib\ext\nunit.framework.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bin\CVS\Entries"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\CVS\Repository"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\CVS\Root"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\com.sporadicism.util.logger.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\com.sporadicism.util.logger.pdb"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\csharp-logger.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\csharp-logger.dll.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\csharp-logger.pdb"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\Logger.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Release\com.sporadicism.util.Logger.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Release\Logger.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Release\CVS\Entries"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Release\CVS\Repository"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Release\CVS\Root"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "doc\license.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "lib\ext\nunit.framework.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "lib\ext\nunit-license.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "netdoc\Logger.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\EventLogger.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\ILogFormatter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\ILogger.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\Level.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\LogActivator.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\LogFactory.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\LoggerProperties.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\LogName.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\MessageFormatter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\eventlog\EventLogger.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "src\com\sporadicism\util\logger\eventlog\EventLogProperties.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "test\com\sporadicism\util\logger\EventLoggerTest.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "test\com\sporadicism\util\logger\eventlog\EventLoggerTest.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

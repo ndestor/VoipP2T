@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>csharp-logger</name>
+    </assembly>
+    <members>
+        <member name="T:com.sporadicism.util.logger.EventLogger">
+            <summary>
+            Logs events to the System Event Log
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.ILogger">
+            <summary>
+            Interface for the logging utility.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.ILogger.debug(System.String)">
+            <summary>
+            Used for debug messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.ILogger.info(System.String)">
+            <summary>
+            Used for information messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.ILogger.warn(System.String)">
+            <summary>
+            Used for warning messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.ILogger.error(System.String)">
+            <summary>
+            Used for error messages
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="P:com.sporadicism.util.logger.ILogger.LogLevel">
+            <summary>
+            Overall logging level.  This is used to determine whether or not to log
+            	certain statements
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.#ctor">
+            <summary>
+            Creates an instance of the logger using the Application log category
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of the event logger taking an application
+            	log name.
+            </summary>
+            <param name="log">Name of the application the log is for</param>
+            <param name="machine">Name of the machine to log to</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Public constructor for Logger.
+            </summary>
+            <param name="log">Log to log event to</param>
+            <param name="machine">The event log exists on</param>
+            <param name="source">The application/ source of the event</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.createEventLog(System.String,System.String)">
+            <summary>
+            Creates an instance of the event logger.  If the log does not
+            	exist then it is created
+            </summary>
+            <param name="application">Source of the logging event</param>
+            <param name="machine">Machine to log the event to, "." is the local machine</param>
+            <returns></returns>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.createEventSource(System.String,System.String,System.String)">
+            <summary>
+            Creates an event source if it is not already associated with a log
+            </summary>
+            <param name="machine">Machine the event occurred on</param>
+            <param name="source">Source of the event</param>
+            <param name="log">Name of the log to be logged to</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.debug(System.String)">
+            <summary>
+            Log the given message to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.info(System.String)">
+            <summary>
+            Log information to the event log
+            </summary>
+            <param name="message">Message to Log</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.warn(System.String)">
+            <summary>
+            Log a warning to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLogger.error(System.String)">
+            <summary>
+            Log an error to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="P:com.sporadicism.util.logger.EventLogger.LogName">
+            <summary>					 
+            The name of the application log that events will be logged to.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.EventLogger.Source">
+            <summary>
+            The name of the event source.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.EventLogger.MachineName">
+            <summary>
+            The machine to log the event to.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.EventLogger.LogLevel">
+            <summary>
+            The level to be applied to the application logging.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.EventLogger.LoggerLevel">
+            <summary>
+            Sets the logging level of the current logger
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.EventLogger.Log">
+            <summary>
+            Log object
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.EventLogger.Application">
+            <summary>
+            Constant for the logger application
+            </summary>
+        </member>
+        <member name="F:com.sporadicism.util.logger.EventLogger.Application.LOGGER">
+            <summary>
+            Default name of the application being logged
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.EventLogger.Machine">
+            <summary>
+            Local machine logging
+            </summary>
+        </member>
+        <member name="F:com.sporadicism.util.logger.EventLogger.Machine.LOCAL">
+            <summary>
+            Default location of the machine to log to
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.LogFactory">
+            <summary>
+            Summary description for LogFactory.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.LogFactory.#ctor">
+            <summary>
+            Public constructor
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.LogFactory.getEventLogger(System.String,System.String,System.String)">
+            <summary>
+            Returns a new event logger
+            </summary>
+            <param name="machine">Machine that log will go to</param>
+            <param name="log">Name of log</param>
+            <param name="source">Source of the log event</param>
+            <returns></returns>
+        </member>
+        <member name="M:com.sporadicism.util.logger.LogFactory.getLogger">
+            <summary>
+            Creates a logger class of the type identified in the properties
+            	file.
+            </summary>
+            <returns>A new instance of an object that implements <code>ILogger</code></returns>
+        </member>
+        <member name="T:com.sporadicism.util.logger.LogName">
+            <summary>
+            Class that holds the constant values for typical Windows NT/ 2000 Event Log Names
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.APPLICATION">
+            <summary>
+            Application Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.SYSTEM">
+            <summary>
+            System Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.SECURITY">
+            <summary>
+            Security Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.DIRECTORY_SERVICE">
+            <summary>
+            Directory Service Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.DNS_SERVER">
+            <summary>
+            DNS Server Log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.FILE_REPLICATION_SERVICE">
+            <summary>
+            File Replication Service
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.PORTAL_DEV">
+            <summary>
+            Development event log
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogName.PORTAL_PROD">
+            <summary>
+            Production event log
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.EventLoggerTest">
+            <summary>
+            Tests the event log implementation of ILogger.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLoggerTest.TestLogDebug">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLoggerTest.TestLogInfo">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLoggerTest.TestLogWarn">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.EventLoggerTest.TestLogError">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.MessageFormatter">
+            <summary>
+            Summary description for MessageAppender.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.MessageFormatter.format(System.String)">
+            <summary>
+            Formats the String in the format specified in a properties file.
+            	Appends date values, line numbers, etc.
+            </summary>
+            <param name="message">The message to be formatted.</param>
+            <returns>The formatted message.</returns>
+        </member>
+        <member name="T:com.sporadicism.util.logger.Level">
+            <summary>
+            Level stores the default logging level for the application.
+            	All loggers have to know what logging level the application
+            	is currently defined at.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.Level.#ctor">
+            <summary>
+            Default constructor for the level object.  This constructor
+            	is called by the constant properties defining the logging
+            	levels.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.Level.DEBUG">
+            <summary>
+            The <code>DEBUG</code> level designates the level used to 
+            debug the system and to help in resolving issues surrounding
+            an application's malfunction.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.Level.INFO">
+            <summary>
+            The <code>INFO</code> logging level designates events that
+            are useful in monitoring events that are significant
+            in an application life cycle.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.Level.WARN">
+            <summary>
+            the <code>WARN</code> level designates events that might
+            be harmful to system stability.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.Level.ERROR">
+            <summary>
+            The <code>ERROR</code> level designates error events that
+            might still allow the application to continue running.
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.ILogFormatter">
+            <summary>
+            Summary description for ILogFormatter.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.ILogFormatter.format(System.String)">
+            <summary>
+            Format the message applying and return the formatted message.
+            	The formatter can be specified in the properties file.
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.LogProperties">
+            <summary>
+            Reads the properties file and sets default properties.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.LogProperties.#ctor">
+            <summary>
+            Creates a new instance of <code>LoggerProperties</code>.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogProperties.LogPropertiesFile">
+            <summary>
+            Public accessor for the file that contains all properties
+            	for the logger.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogProperties.Formatter">
+            <summary>
+            Returns the activator object that knows how to create a new 
+            	Formatter.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogProperties.Logger">
+            <summary>
+            Returns the activator object that knows how to create a 
+            	new Logger.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogProperties.LogLevel">
+            <summary>
+            The logging level for the application.
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.eventlog.EventLogger">
+            <summary>
+            Summary description for EventLogger.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogger.#ctor">
+            <summary>
+            Creates a new instance of the event logger.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogger.getInstance">
+            <summary>
+            Returns an instance of the event logger.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogger.createEventSource(System.String,System.String,System.String)">
+            <summary>
+            Creates an event source if it is not already associated with a log
+            </summary>
+            <param name="machine">Machine the event occurred on</param>
+            <param name="source">Source of the event</param>
+            <param name="log">Name of the log to be logged to</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogger.debug(System.String)">
+            <summary>
+            Log the given message to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogger.info(System.String)">
+            <summary>
+            Log information to the event log
+            </summary>
+            <param name="message">Message to Log</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogger.warn(System.String)">
+            <summary>
+            Log a warning to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogger.error(System.String)">
+            <summary>
+            Log an error to the event log
+            </summary>
+            <param name="message">Message to log</param>
+        </member>
+        <member name="P:com.sporadicism.util.logger.eventlog.EventLogger.LogLevel">
+            <summary>
+            The level to be applied to the application logging.
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.eventlog.EventLogProperties">
+            <summary>
+            This class is used to get the event log property information from
+            	the properties file.  The 
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLogProperties.#ctor">
+            <summary>
+            Creates a new instance of the event log properties.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.eventlog.EventLogProperties.LogName">
+            <summary>					 
+            The name of the application log that events will be logged to.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.eventlog.EventLogProperties.Source">
+            <summary>
+            The name of the event source.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.eventlog.EventLogProperties.MachineName">
+            <summary>
+            The machine to log the event to.
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.LogActivator">
+            <summary>
+            Summary description for ObjectCreator.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.LogActivator.#ctor">
+            <summary>
+            Creates a new instance of an object specified by the <code>assembly</code>
+            	and the <code>classname</code> of that object.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.LogActivator.activate">
+            <summary>
+            Creates a new instance of the object specified by the 
+            	<code>Assembly</code> and <code>Classname</code>
+            	properties.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogActivator.Assembly">
+            <summary>
+            Assembly to search for object in.
+            </summary>
+        </member>
+        <member name="P:com.sporadicism.util.logger.LogActivator.Classname">
+            <summary>
+            Class name of file we will create an object for.
+            </summary>
+        </member>
+        <member name="T:com.sporadicism.util.logger.eventlog.EventLoggerTest">
+            <summary>
+            Summary description for EventLoggerTest.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLoggerTest.Setup">
+            <summary>
+            Setup the logger for testing.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLoggerTest.TestLogDebug">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLoggerTest.TestLogInfo">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLoggerTest.TestLogWarn">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+        <member name="M:com.sporadicism.util.logger.eventlog.EventLoggerTest.TestLogError">
+            <summary>
+            Test the write method does not throw an exception
+            	writing to the log.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,4 @@
+Z:\PERSO\AutomateTests1\testeur\bin\Release\Tester.exe.config
+Z:\PERSO\AutomateTests1\testeur\obj\Release\Tester.csproj.ResolveComReference.cache
+Z:\PERSO\AutomateTests1\testeur\obj\Release\Tester.exe
+Z:\PERSO\AutomateTests1\testeur\obj\Release\Tester.pdb
