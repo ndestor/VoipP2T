@@ -8,8 +8,8 @@ Developed with Visual Studio 2005.
 
 # Documentation
 
-- Documentation/VoipTAT - Presentation.pdf: Presentation of the software
-- Documentations/VoipTAT - Description Logiciel.pdf: Describe the logical architecture of the software
-- Documentations/VoipTAT - Guide utilisateur.pdf: User-Guide manual
+- Documentation/VoipP2T - Presentation.pdf: Presentation of the software
+- Documentations/VoipP2T - Description Logiciel.pdf: Describe the logical architecture of the software
+- Documentations/VoipP2T - Guide utilisateur.pdf: User-Guide manual
 
 For more information regarding the code, some UML diagrams are presents in the source code.
