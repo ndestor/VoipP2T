@@ -4,7 +4,7 @@ A testing tool for Voip platform in .NET C#.
 
 Use the SIPphone eConf (https://fr.wikipedia.org/wiki/EConf) to make phone calls.
 
-Developed with Visual Studio 2005.
+Developed with Visual Studio 2005 (in 2008...)
 
 # Documentation
 
