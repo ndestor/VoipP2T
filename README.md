@@ -1,6 +1,6 @@
 # Project Title
 
-A testing tool for Voip platform in .NET C#, developed in 2007.
+A testing tool for Voip platform in .NET C#, developed in 2007 during my intership.
 
 Use the SIPphone eConf (https://fr.wikipedia.org/wiki/EConf) to make phone calls.
 
